@@ -13,8 +13,8 @@ node index.js
 ___
 
 ### When the code runs it does the following:
-1. Create 4 nested Category entities as follows:
-![categoryTree](https://user-images.githubusercontent.com/103587065/215344480-408776c4-2da5-45e1-88e3-1283e370f241.png)
+1. Create 4 nested Category entities as follows:  
+![categoryTree](https://user-images.githubusercontent.com/103587065/215344480-408776c4-2da5-45e1-88e3-1283e370f241.png)  
 2. Create 2 Items per Category, one which is unique and the other which is shared with one other Category
 3. The CategoryItem joining entities are created during step 2
 4. 2 CategoryRoles are created. The CategoryRoles are used to store an array of CategoryIds to easily assign and modify multiple Categories access to CUstomerRole of newly registering Customers
