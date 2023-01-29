@@ -51,18 +51,10 @@ const joeRole = new CustomerRole(joe.Id, [allCustomers.Id], [onlineOnly.Id]);
 const customerArray = [bob, joe];
 const customerRoleArray = [bobRole, joeRole];
 
-// for each customer role
-//      get the categoryRoleIdArray and for each element, find the object with that id then get the categoryIdArray from the object and concat them in to single array called accessibleCategoriesIdList
-//      get the CustomCategoryIdArray for the role and concat with above array
-//      categoryItemList.filter(categoryItem => return if categoryItem.CategoruyId exists in the concat list above) store this in accessibleCategoryItemList
-//      map the categoryItem to ItemId
-//      find unique itemid
-//      store unique item in above to precompute list
-
 const precomputeCustomerItems = (customerRoleArray, categoryItemArray, categoryRoleArray, itemArray, customerArray) => {
     let finalPrecomputeArray = [];
     customerRoleArray.forEach(customerRole => {
-        
+
         let customerName = customerArray[customerArray.findIndex(customer => customer.Id === customerRole.CustomerId)].Name;
         let accessibleCategoriesIdList = [];
         let accessibleCategoryItemList = [];
